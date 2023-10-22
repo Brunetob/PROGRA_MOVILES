@@ -180,3 +180,19 @@ function whichMonths(season: Season) {
 }
 
 console.log(whichMonths(Season.Fall));
+
+console.log("******************************Segundo ejercicio Exercism******************************");
+
+function twoFer(name: string){
+    let named:string = name;
+    let msgMain = "One for " + named+ ", one for me.";
+    let msgSecond = "One for you, one for me";
+
+    if(named !== null && named !== "" && named !== " "){
+        return msgMain;
+    }else{
+        return msgSecond;
+    }
+}
+
+console.log(twoFer(""));
