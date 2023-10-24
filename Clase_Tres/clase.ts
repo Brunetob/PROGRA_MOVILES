@@ -179,7 +179,7 @@ function whichMonths(season: Season) {
     return monthsInSeason;
 }
 
-console.log(whichMonths(Season.Fall));
+console.log(whichMonths(Season.Summer));
 
 console.log("******************************Segundo ejercicio Exercism******************************");
 

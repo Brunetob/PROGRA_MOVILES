@@ -35,9 +35,10 @@ if (typeof randomValue === "string"){
 //*****EJERCICIOs EN CLASES******
 //Declarar e inicializar variables con cada uno de los tipos vistos y por medio de la aserción de tipos y condicionales determinar su tipo
 
-let value: unknown;
+let value: unknown = 10;//no sé que tipo
 
-value = 10;
+//value = 10;//number
+
 if (typeof value === 'number') {
     console.log("Value es de tipo ", typeof value);
 }
@@ -68,7 +69,7 @@ if (Array.isArray(value)) {
 }
 
 //Ejercicio 2 - Mediante una función recibir dos parámetros, si es que los parámetros son numéricos que sume, si es que son strings, que los concatene
-
+console.log("****************Ejercicio 2****************")
 function parameterCheck(value: unknown, value2: any){
     if(typeof value === 'number' && typeof value2 === 'number'){
         return value + value2;
@@ -78,7 +79,7 @@ function parameterCheck(value: unknown, value2: any){
         return "Los tipos de datos no son aceptados";
     }
 }
-console.log(parameterCheck("Hola","extraño"));
+console.log(parameterCheck("hola","extraño"));
 
 //Tipos de unión
 /*let multiType: number | boolean;
