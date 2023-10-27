@@ -1,3 +1,4 @@
+let colorMap = {'brown': 3}
 /*
 El código que has proporcionado consiste en una serie de constantes y funciones relacionadas con la conversión de nombres de colores en números y la definición de un conjunto de colores. Vamos a explicar cada parte del código:
 
