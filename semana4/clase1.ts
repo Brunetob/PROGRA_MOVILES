@@ -60,7 +60,7 @@ interface Message {
 }
 
 //************************ TAREA Hacer que los 3 valores de la función sean opcionales sin valores predeterminados************************
-let addThreeNumbers = (x?:number, y?:number, z?:number) : number | unknown => {
+let addThreeNumbers = (x?:number, y?:number, z?:number) : number | undefined => { //no sirve con undefine
     if (x !== undefined && y !== undefined && z !== undefined) {
         return x + y + z;
     } else {
