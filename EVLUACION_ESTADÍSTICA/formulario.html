@@ -1,0 +1,25 @@
+<!-- index.html -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <p>Selecciona un ejercicio y haz clic.</p>
+    <form>
+        <label for="exercism"> Ejercicios</label>
+        <select name="exercism" id="exerciseSelect">
+          <option value="enumciado">Ejercicios</option>
+          <option value="ejer1">Loteria 🎲</option>
+          <option value="ejer2">Helado 🍨</option>
+        </select>
+        <button type="reset">Borrar selección</button>
+    </form>
+    <div id="screen">
+      <!-- Aquí se mostrarán los resultados -->
+    </div>
+    <script src="evaluacion.js"></script>
+</body>
+</html>
