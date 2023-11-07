@@ -1,9 +1,9 @@
 function generarNumerosLoteria() {
     const cantidadNumeros = 8; // Definición del número de elementos en cada tabla de lotería
-    const rangoNumeros = 50; // El rango máximo para generar números aleatorios
+    const rangoNumeros = 10; // El rango máximo para generar números aleatorios
     const tablasLoteria = []; // Inicialización de un arreglo para almacenar las tablas de lotería
 
-    for (let i = 0; i < 20; i++) { // Bucle para generar 20 tablas de lotería
+    for (let i = 0; i < 10; i++) { // Bucle para generar 20 tablas de lotería
         const numerosTabla = []; // Inicialización de un arreglo para almacenar los números de cada tabla
         while (numerosTabla.length < cantidadNumeros) { // Bucle para generar 8 números en cada tabla
             const numeroAleatorio = Math.floor(Math.random() * rangoNumeros) + 1; // Generación de un número aleatorio
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Si se selecciona el ejercicio 1 (ejer1) - lotería
             const tablasLoteria = generarNumerosLoteria(); // Genera las tablas para la lotería
             const totalCombinaciones = tablasLoteria.length; // Calcula el número total de combinaciones generadas
-            const ejercicioDescription = `Ejercicio 1: Dados 5 números, realizar las posibles combinaciones para 20 tablas de una lotería, cada tabla con 8 números. Total de combinaciones: ${totalCombinaciones}`;
+            const ejercicioDescription = `Ejercicio 1: Dados 10 números, realizar las posibles combinaciones para 20 tablas de una lotería, cada tabla con 8 números. Total de combinaciones: ${totalCombinaciones}`;
             screenDiv.innerHTML = `<p>${ejercicioDescription}</p><pre>${JSON.stringify(tablasLoteria, null, 2)}</pre>`;
             // Muestra la descripción del ejercicio 1 y las combinaciones generadas en la pantalla
         } else if (selectedExercise === "ejer2") {
