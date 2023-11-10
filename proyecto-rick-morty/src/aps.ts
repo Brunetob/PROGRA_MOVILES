@@ -18,7 +18,7 @@ async function fetchLevels() {
 }
 
 function displayLevels(levels: LevelsArray) {
-    const container = document.getElementById('characters-container');
+    const container = document.getElementById('levels-container');
     if (container) {
         levels.forEach(level => {
             container.innerHTML += `

@@ -4,7 +4,7 @@ interface Level {
     levelNumber: number;
 }
 
-//type LevelsArray = Level[];
+type LevelsArray = Level[];
 
 async function fetchCharacters() {
     // const response = await fetch("https://rickandmortyapi.com/api/character");
