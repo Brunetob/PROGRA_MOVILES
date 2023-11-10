@@ -1,4 +1,33 @@
 "use strict";
+
+async function fetchLevels() {
+    try {
+        const response = await fetch("http://localhost:8081/Players");
+        const data = await response.json();
+        displayLevels(data);
+    } catch (error) {
+        console.error("Error fetching levels:", error);
+    }
+}
+
+function displayLevels(levels) {
+    const container = document.getElementById('levels-container');
+    if (container) {
+        levels.forEach(level => {
+            container.innerHTML += `
+                <div class="level-card">
+                    <h2>${level.Lvl_name}</h2>
+                    <p>Difficulty: ${level.Lvl_difficulty}</p>
+                    <p>Level Number: ${level.Lvl_number}</p>
+                </div>
+            `;
+        });
+    }
+}
+
+fetchLevels();
+
+/*"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -29,4 +58,4 @@ function displayCharacters(characters) {
         });
     }
 }
-fetchCharacters();
+fetchCharacters();*/
