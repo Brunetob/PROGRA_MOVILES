@@ -1,0 +1,32 @@
+CLASE 29/11/2023
+Productividad: reutilización de componentes
+
+----Buscar en google 'chakra ui' (https://chakra-ui.com))
+* is a simple, modular and accessible component library that gives you the building blocks you need to build your React applications.
+* Less code. More speed
+
+----Material ui (https://mui.com)
+* Basado en un estandar de diseño
+
+----DEfinir un componentes
+* es una función de js (parámetros de información)
+* una función unicamente la información va estár ahí mientras se ejecute esta, en el momento que se detiene, ya no está ahí la información
+* UN ESTANDAR AL REAR componentes con la primera letra en mayúsculas
+
+---- React (https://es.react.dev) (https://es.legacy.reactjs.org/docs/create-a-new-react-app.html)
+* Crear un proyecto con react hay de varias maneras: Next.js ,Remix, Gatsby, Expo, etc..
+* Creamos con vite y elegimos el de react-ts: https://vitejs.dev/guide/
+* npm create vite@latest
+* Reac se maneja en una arquitectura separate on concersn
+* escojemos el nombre: firstReactApp
+* comando para correr proyecto: npm run dev
+** Añadir Ant Design: pnpm install antd
+---- Ant Design
+
+---- Ver source de una página desde la url
+* https://www.mundodeportivo.com/urbantecno/aplicaciones/como-ver-el-codigo-fuente-de-una-pagina-web-desde-el-movil#:~:text=Lo%20primero%20que%20debes%20hacer,del%20link%20de%20la%20página.
+* source:https://www.mundodeportivo.com/urbantecno
+
+---- Dry Software
+* Don't repeat yourself
+* En diseño orientado a objetos, El principio No te repitas (en inglés Don't Repeat Yourself o DRY, también conocido como Una vez y sólo una) establece que, en un entorno informático, la información no debe repetirse. Es decir, el conocimiento almacenado en un programa informático debe mantenerse en un, y sólo en un, lugar
