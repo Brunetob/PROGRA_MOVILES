@@ -50,4 +50,4 @@ async function showPost() {
     console.log('Length: ' + fact.length);
 }
 
-showPost();////////////
+showPost();
