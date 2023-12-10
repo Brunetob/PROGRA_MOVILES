@@ -13,7 +13,7 @@ Productividad: reutilización de componentes
 * una función unicamente la información va estár ahí mientras se ejecute esta, en el momento que se detiene, ya no está ahí la información
 * UN ESTANDAR AL REAR componentes con la primera letra en mayúsculas
 
----- React (https://es.react.dev) (https://es.legacy.reactjs.org/docs/create-a-new-react-app.html)
+----React (https://es.react.dev) (https://es.legacy.reactjs.org/docs/create-a-new-react-app.html)
 * Crear un proyecto con react hay de varias maneras: Next.js ,Remix, Gatsby, Expo, etc..
 * Creamos con vite y elegimos el de react-ts: https://vitejs.dev/guide/
 * npm create vite@latest
