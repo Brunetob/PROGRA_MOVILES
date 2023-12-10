@@ -1,0 +1,64 @@
+***********************REACT CON CHAKRA***********************
+
+Referencia: https://www.youtube.com/watch?v=noRAYtyFilU&t=93s
+
+-[] Primero se crea un proyec react app con chakra en el directorio escogido, comando: npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+-[] Segundo, 
+
+paso a paso de manera diferente:
+-[] Primero crear un proyecto react con: npm create vite@latest
+-[] Segundo, borra o comentar en App.tsx para que quede algo así:
+
+**********************
+import React from 'react';
+
+
+function App() {
+  return (
+    <span>Hola, esto se reemplazo</span>
+  )
+}
+
+export default App
+**********************
+
+-[] Tercero, en main.tsx debe quedar así:
+**********************
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.tsx'
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+
+**********************
+
+-[] Cuarto, instalamos chakra desde la terminal: npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+-[] Quinto, set up (setupeamos) el provider en la ruta de nuestra aplicación. Puede ser en 'index.jsx, index.tsx or App.jsx depending on the framework you use.' En este caso lo hice en el main.tsx
+
+**********************
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.tsx'
+
+// cambios míos
+import { ChakraProvider } from '@chakra-ui/react'
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
+  </React.StrictMode>,
+)
+**********************
+
+-[] Sexto, en App.jsx borramos las importaciones existentes y colocamos las correspondientes del componente a usar. Esta vez es así porque solo quieroq ue se vea el componente
+
+
+***********************REACT CON Material UI***********************
+
+
