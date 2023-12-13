@@ -1,0 +1,5 @@
+---- Extras: Fedora es un S.O para compus viejas, funciona bien
+* sonwden movie: nca, recomienda usar S.O tails, para consmir información de internet de forma anónima
+* Julian Assange
+* Bun javascript: 
+* Offensive scurity, es una empresa que está detrás de la distribución 'Kali linux' que es usado para hackear y la empresa provee de certificados importantes que muestran que tu eres hacker
