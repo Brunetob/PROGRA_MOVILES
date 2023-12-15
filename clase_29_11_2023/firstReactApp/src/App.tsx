@@ -1,62 +1,31 @@
-/*import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import Gallery from "./Gallery";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <Gallery />
+    </div>
+  );
 }
 
-export default App*/
+/* // Todos: Clase 15/12/2023 gallery.tsx
+//import Gallery from './Gallery.tsx';
+import {Gallery} from './Gallery.tsx';
 
-// función práctica
-/*function Profile(){
+export default function App(){
   return (
-    <img
-      src="https://i.imgur.com/MK3eW3As.jpg"
-      alt="Katherin Johnson"
-    />
+    <div>
+      <Gallery />
+      <Gallery />
+      <Gallery />
+    </div>
   )
-}
 
-export default function Gallery(){
-  return (
-    <section> 
-      <h1>Amazing scienttists</h1>
-      <Profile />
-      <Profile />
-      <Profile />
-    </section>
-  )
 }*/
 
-// Añadir un componente con ant design
-import React from 'react';
+// Todos: Añadir un componente con ant design
+/*import React from 'react';
 import { Card } from 'antd';
 
 const { Meta } = Card;
@@ -71,4 +40,4 @@ const App: React.FC = () => (
   </Card>
 );
 
-export default App;
+export default App;*/

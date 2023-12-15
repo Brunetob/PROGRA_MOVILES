@@ -1,0 +1,53 @@
+* Mientras se añadan más componentes, es mejor empezar a separarlos en diferentes archivos
+
+* KISS en programación:
+El principio KISS (Keep It Simple, Stupid): mantenlo simple, estúpido, es uno de los principios de programación más conocidos y se refiere al código fuente de un programa que debe ser simple y directo desde el principio. Su significado es bastante comprensible, aunque muy amplio.
+
+* Code Smell:
+En programación, un Code Smell, también conocido como un código que huele o apesta, son una serie de síntomas en el código que nos vienen a indicar que tal vez no se están haciendo las cosas de una forma del todo correcta, lo que puede llevar a que haya algún problema a futuro y un problema de trasfondo.
+
+Características de un Code Smell
+No tienen por qué ser errores o bugs de programación, ya que pueden no ser técnicamente incorrectos y el programa funcione correctamente.
+Indican deficiencias en el diseño y pueden hacer que se realice un desarrollo más lento.
+Aumentan el riesgo de errores o fallos en el futuro.
+
+*ES: ECMA SCRIPT
+
+*****Cuando un proyecto de react o cualquiera tiene un archivo package-lock.json quiere decir que el proyecto fue creado con npm pero si dice package-yam.
+
+***Writing Markup whit JSX***
+--- Qué es JSX?
+JSX (JavaScript XML) es una extensión sintáctica para JavaScript que permite a los desarrolladores escribir código similar al HTML dentro de un archivo JavaScript. Fue desarrollada por Meta (antes Facebook). La sintaxis de JSX se parece a la de HTML, con etiquetas de apertura y cierre, atributos y elementos anidados.
+
+--- JSx y react
+son independientes
+
+
+¿si es que jsx  se compila a objetos de javascrit, este suceso de qué forma impacta en los nombres y las propiedades de las etiquetas en el markup?
+
+Respuesta>
+************************
+Cuando escribes JSX en tu código React, se compila a llamadas a funciones de React, creando elementos React. La estructura JSX se traduce a llamadas a funciones en JavaScript. Por ejemplo, la siguiente expresión JSX:
+
+jsx
+Copy code
+<div className="example">Hello, world!</div>
+se compilará a algo similar a esto en JavaScript:
+
+javascript
+Copy code
+React.createElement("div", { className: "example" }, "Hello, world!");
+El primer argumento de React.createElement es el tipo de elemento, el segundo argumento son las propiedades (o props), y los argumentos siguientes son los hijos del elemento.
+
+Por lo tanto, el nombre de la etiqueta en JSX se traduce al primer argumento de React.createElement. Las propiedades de la etiqueta se traducen al segundo argumento, y los hijos se traducen a los argumentos restantes.
+
+En el caso de las etiquetas propias que defines, como Profile, CardComponent, y Gallery, el nombre de la etiqueta se traduce a la función que define ese componente.
+
+En resumen, el proceso de compilación de JSX a JavaScript no cambia los nombres o propiedades de las etiquetas en el markup, solo traduce la sintaxis JSX a llamadas a funciones de React. Esto permite a React entender y manejar esos elementos durante la ejecución.
+************************
+
+---- ESlint https://eslint.org
+
+ ESLint se centra en la detección de errores y la aplicación de reglas específicas, mientras que Prettier se centra en el formateo del código. Juntos, ofrecen un poderoso conjunto de herramientas para mejorar la calidad y la legibilidad del código en un proyecto.
+
+ https://es.react.dev
