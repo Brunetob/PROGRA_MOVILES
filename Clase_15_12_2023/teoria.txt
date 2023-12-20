@@ -57,5 +57,8 @@ En resumen, el proceso de compilación de JSX a JavaScript no cambia los nombres
  el estilo dentro de un objeto
  
 
- --- Todolist.tsx
- 
+--- Todolist.tsx
+  Indicación: Crear una interfaz para el objeto person de la última función vista
+
+--- Tarea:
+ Crear un componente que contenga un avatar en donde el objeto y la interfaz correspondiente hagan referencia a un superhéroe de su elección
