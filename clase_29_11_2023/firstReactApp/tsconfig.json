@@ -7,7 +7,7 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "bundler", // estaba bundler y le cambié por Classic
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,

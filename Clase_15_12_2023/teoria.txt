@@ -51,3 +51,11 @@ En resumen, el proceso de compilación de JSX a JavaScript no cambia los nombres
  ESLint se centra en la detección de errores y la aplicación de reglas específicas, mientras que Prettier se centra en el formateo del código. Juntos, ofrecen un poderoso conjunto de herramientas para mejorar la calidad y la legibilidad del código en un proyecto.
 
  https://es.react.dev
+
+ **********CLASE 20/12/2023**********
+ Refactorizar el cpodigo de la función de avatar para tener el nombre y 
+ el estilo dentro de un objeto
+ 
+
+ --- Todolist.tsx
+ 
