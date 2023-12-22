@@ -1,8 +1,7 @@
-import React from "react";
+//import React from "react";
 import Profile from "./Profile";
 import CardComponent from "./CardComponent.tsx";
 import Todolist from "./Todolist.tsx";
-import Heroe from "./Heroe.tsx";
 
 function Gallery() {
   return (
@@ -13,7 +12,6 @@ function Gallery() {
       <CardComponent />
       <CardComponent />
       <Todolist />
-      <Heroe />
     </section>
   );
 }

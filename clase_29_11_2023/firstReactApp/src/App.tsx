@@ -1,9 +1,14 @@
-import Gallery from "./Gallery";
+//import Gallery from "./Gallery";
+import Heroe from "./Heroe.tsx";
 
 export default function App() {
   return (
     <div>
+      {/*
       <Gallery />
+      */}
+      {/* Pasa las propiedades requeridas al componente Heroe */}
+      <Heroe />
     </div>
   );
 }
