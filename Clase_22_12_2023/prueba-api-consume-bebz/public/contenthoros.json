@@ -1,0 +1,62 @@
+[
+  {
+    "title": "aries",
+    "description": "Courageous and confident, Aries are natural leaders with a zest for life.",
+    "img": "/src/assets/aries.png"
+  },
+  {
+    "title": "taurus",
+    "description": "Patient and reliable, Taurus individuals are known for their practical and grounded nature.",
+    "img": "/src/assets/taurus.png"
+  },
+  {
+    "title": "gemini",
+    "description": "Versatile and curious, Geminis are social butterflies with a love for communication and learning.",
+    "img": "/src/assets/gemini.png"
+  },
+  {
+    "title": "cancer",
+    "description": "Emotional and nurturing, Cancerians are deeply connected to their loved ones and home.",
+    "img": "/src/assets/cancer.png"
+  },
+  {
+    "title": "leo",
+    "description": "Bold and charismatic, Leos thrive in the spotlight and bring warmth to those around them.",
+    "img": "/src/assets/leo.png"
+  },
+  {
+    "title": "virgo",
+    "description": "Analytical and practical, Virgos possess a keen eye for detail and a strong work ethic.",
+    "img": "/src/assets/virgo.png"
+  },
+  {
+    "title": "libra",
+    "description": "Harmonious and diplomatic, Libras value balance and fairness in all aspects of life.",
+    "img": "/src/assets/libra.png"
+  },
+  {
+    "title": "scorpio",
+    "description": "Passionate and mysterious, Scorpios have a depth of emotion and intensity in their relationships.",
+    "img": "/src/assets/scorpio.png"
+  },
+  {
+    "title": "sagitarius",
+    "description": "Adventurous and optimistic, Sagittarians love exploration and have a free-spirited nature.",
+    "img": "/src/assets/sagitarius.png"
+  },
+  {
+    "title": "capricorn",
+    "description": "Ambitious and disciplined, Capricorns are determined individuals with a strong sense of responsibility.",
+    "img": "/src/assets/capricorn.png"
+  },
+  {
+    "title": "aquarius",
+    "description": "Innovative and independent, Aquarians are forward-thinking and value intellectual pursuits.",
+    "img": "/src/assets/aquarius.png"
+  },
+  {
+    "title": "piscis",
+    "description": "Compassionate and intuitive, Pisceans are sensitive souls with a deep connection to their emotions.",
+    "img": "/src/assets/piscis.png"
+  }
+]
