@@ -41,10 +41,10 @@
   color: #888;
 }
 /** Cambios míos*/
-/*#fotito{
+#fotito{
   margin-left: 50%;
-}*/
-/*body{
+}
+body{
   background-color: #504a4a;
 }
 h1{
@@ -57,7 +57,7 @@ h1{
 
 .herocard{
   border: 1px solid blue;
-}*/
+}
 
 .main-content {
   display: flex;
