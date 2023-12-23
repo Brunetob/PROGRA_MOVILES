@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 
 /*export default function Avatar (){
     return (
@@ -23,7 +23,7 @@ import React from 'react';
 }*/
 
 /** Refactorización del código de la función avatar */
-interface AvatarProps {
+/*interface AvatarProps {
     src: string;
     alt: string;
     className: string;
@@ -43,4 +43,4 @@ export default function AvatarWrapper(): JSX.Element {
             alt={avatarInfo.alt}
         />
     );
-}
+}*/

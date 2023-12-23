@@ -1,4 +1,4 @@
-import HoroscopCards from './pages/HoroscopCards.tsx'
+import {HoroscopCards} from './pages/HoroscopCards.tsx'
 import './App.css'
 
 function App() {

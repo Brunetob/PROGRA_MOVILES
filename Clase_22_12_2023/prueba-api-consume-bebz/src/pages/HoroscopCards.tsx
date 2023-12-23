@@ -21,7 +21,7 @@ interface HoroscopeCardData {
     { title: "piscis", description: "", img: "/src/assets/piscis.png" },
 ];*/
 
-export default function HoroscopeCard({ title, img, description }: HoroscopeCardData) {
+export function HoroscopeCard({ title, img, description }: HoroscopeCardData) {
     return (
       <div className="card">
         <img className="image" src={process.env.PUBLIC_URL + img} alt={title} />
