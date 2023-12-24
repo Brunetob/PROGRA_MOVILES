@@ -65,3 +65,5 @@ https://mui.com/material-ui/react-card/
 -[] Primero crear un proyecto react con: npm create vite@latest
 -[] Segundo, instalamos ant design: npm install antd --save
 -[] Tercero, vamos a la documentasión de ant desin y buscamos el apartado de componentes y buscamos card y copiamos el código respectivo en el app.jsx
+
+3611272735812273

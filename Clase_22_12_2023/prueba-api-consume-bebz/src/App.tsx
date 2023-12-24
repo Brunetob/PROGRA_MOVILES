@@ -1,12 +1,13 @@
-import {HoroscopCards} from './pages/HoroscopCards.tsx'
 import './App.css'
+// import ApiService from './apiService'
+import CardApi  from './components/CardApi';
 
 function App() {
 
   return (
-    <div>
-      <HoroscopCards />
-    </div>
+    <>
+      <CardApi term='u'/>
+    </>
   );
 }
 
