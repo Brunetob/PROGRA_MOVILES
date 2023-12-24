@@ -1,5 +1,5 @@
 const API_URL = 'https://mashape-community-urban-dictionary.p.rapidapi.com/define';
-const BASE_URL_SUPERHERO = 'https://superheroapi.com/api/3611272735812273';
+// const MARVEL_API_URL = 'https://marvel-heroic-api-unlock-the-mcu-legendary-characters.p.rapidapi.com/name';
 
 // Declaración de Interfaces y estructuras para ambas api's
 interface UrbanDictionaryEntry {
@@ -19,13 +19,26 @@ interface UrbanDictionaryResponse {
     list: UrbanDictionaryEntry[];
 }
 
-interface SuperheroEntry {
+/*interface MarvelAppearance {
+    movie: string;
+    year: number;
+}*/
+
+interface MarvelCharacter {
     name: string;
+    description: string;
+    powers: string[];
+    /*appearances: MarvelAppearance[];
+    quotes: string[];
+    allies: string[];
+    enemies: string[];
+    affiliation: string;
+    firstAppearance: string;
+    creator: string;
+    aka: string[];*/
 }
 
-interface SuperheroResponse {
-    data: SuperheroEntry;
-}
+
 
 // Funciones a mostrar la promesa
 
@@ -45,10 +58,16 @@ export const fetchUrbanDictionaryDefinition = async (term: string): Promise<Urba
     return data;
 };
 
-export const fetchSuperheroData = async (characterId: string): Promise<SuperheroResponse> => {
-    const url = `${BASE_URL_SUPERHERO}/${characterId}/name`;
+export interface MarvelApiResponse extends Array<MarvelCharacter> {}
 
-    const response = await fetch(url, { method: 'GET' });
+export const fetchMarvelCharacterData = async (characterName: string): Promise<MarvelApiResponse> => {
+    const headers = new Headers({
+        'X-RapidAPI-Key': '2d46d63b4bmshcd8575c8b874ceap1bd115jsn892cf66b3433',
+        'X-RapidAPI-Host': 'marvel-heroic-api-unlock-the-mcu-legendary-characters.p.rapidapi.com'
+    });
+
+    const url = new URL(`https://marvel-heroic-api-unlock-the-mcu-legendary-characters.p.rapidapi.com/name?q=${characterName}`);
+    const response = await fetch(url.toString(), { method: 'GET', headers });
     const data = await response.json();
 
     return data;
