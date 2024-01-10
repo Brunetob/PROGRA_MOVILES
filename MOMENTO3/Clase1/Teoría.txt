@@ -1,0 +1,65 @@
+                      ******10/01/2023******
+----------------------CURSO DE REACT NATIVE----------------------
+* Prerquisitos
+|- Expo go: herramienta de desarrollo para crear experiencias con gestos y    
+gráficos interactivos, utilizando JavaScript y React Native.
+
+* Expo CLI
+|- npx expo -h
+    |- Se pone y (si)
+    |- Se espera a que todo se instale
+    |- El comando npx también sirve en caso de que solo se quiera utilizar una librería sin  instalarla
+
+* Inicializar una nueva Expo App
+ |- npx create-expo-app (se va a utilizar una plantilla)
+ |- Se requieren instalar paquetes, se pode (y)
+ |- Se pone nombre a la app
+ |- Luego se siguen estos pasos:
+    - Se dirige a la carpeta del proyecto
+    - Se ábre el archivo 'package.json' 
+    - Se da en run y luego en run script
+
+
+* Por qué usar Android y IOS puro en vez de usar algo multiplataforma como ReactNative
+ |- Rendimiento:
+Nat iva: Las aplicaciones nativas suelen ofrecer un rendimiento óptimo, ya que están escritas específicamente para la plataforma y pueden aprovechar al máximo las características y optimizaciones de cada sistema operativo.
+React Native: Aunque React Native ha mejorado en términos de rendimiento, es posible que aún no alcance el mismo nivel que una aplicación nativa en algunos casos.
+
+***Acceso a Funcionalidades del Dispositivo:***
+Nat iva: Las aplicaciones nativas pueden aprovechar al máximo todas las características y API específicas de cada plataforma sin depender de bibliotecas de terceros.
+React Native: Aunque React Native intenta proporcionar acceso a muchas funciones nativas, es posible que no tenga soporte inmediato para todas las API de las plataformas, y es posible que necesites módulos adicionales o puentes nativos personalizados.
+
+***Experiencia de Usuario:***
+Nat iva: Puede ofrecer una experiencia de usuario más coherente y fluida, ya que sigue las pautas de diseño específicas de cada plataforma.
+React Native: Aunque React Native intenta replicar la apariencia nativa, puede haber pequeñas diferencias en la experiencia de usuario y en la integración con el sistema operativo.
+Tiempo y Costo de Desarrollo:
+
+Nat iva: Desarrollar dos aplicaciones nativas (una para Android y otra para iOS) puede llevar más tiempo y recursos en comparación con el desarrollo de una única aplicación con un marco multiplataforma.
+React Native: Puede ser más eficiente en términos de tiempo y costo al permitir a los desarrolladores utilizar un código base para ambas plataformas.
+Habilidades del Equipo de Desarrollo:
+
+Nat iva: Requiere desarrolladores con conocimientos específicos en Android (Java o Kotlin) o iOS (Swift o Objective-C).
+React Native: Permite a los desarrolladores utilizar habilidades web (JavaScript, React) para construir aplicaciones móviles, lo que puede ser beneficioso si ya tienen experiencia en estas tecnologías.
+
+
+* ReactNative
+    |- Su lema es: Learn Once, Write anywhere
+* Instalar Dependencias
+    |- habilitar la parte web 
+    |- Comand para instalar las dependencias: npx install react-dom react-native-web @expo/webpack-config
+    |- Levantamos el proyecto de nuevo pero en vez de escoger 'start' normalmente, escogemos el que dice 'web'
+* Crear una pantalla en ReactNative
+    |- Para los estilos usamos objetos ya que se usan con JS a diferencia de web que se usa casos
+    |- TAREA - Cambiar color del texto
+     Para cambiar el color del texto se puede hacer de varias formas, una es hacerlo directamente desde la etiqueta text, de esta forma:
+     <Text style={styles.text}>Open up App.js to start working on your app!</Text>
+     También puede hacerse de esta manera:
+     container: {
+    flex: 1,
+    backgroundColor: '#25292e',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  text: {
+    color: '#D94626', // Cambiar el color del texto aquí
+  },
