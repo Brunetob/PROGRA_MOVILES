@@ -63,3 +63,11 @@ React Native: Permite a los desarrolladores utilizar habilidades web (JavaScript
   text: {
     color: '#D94626', // Cambiar el color del texto aquí
   },
+
+                     ******12/01/2023******
+----------------------CURSO DE REACT NATIVE----------------------
+Se eliminaron las etiquetas Text de App.js para poder colocar la ImageViewer
+Se creo carpeta de componentes y dentronun archivo que se llama ImageViewer.js y con su código respectivo.
+También se cambio en el App.js para importar ImageView desde components
+|- Crear botones usando Pressable y estos tiene propiedades que dependiendo el   tiempo de presiion se va a hacer algo, esto es asi porque se esta trabajando para moviles
+|- Comando para instalar... npx expo isntall @expo/vector-icons
