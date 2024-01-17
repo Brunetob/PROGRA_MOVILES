@@ -37,5 +37,4 @@ const styles = StyleSheet.create({
 Agregada documentación de propiedades y descripción del componente.
 Importado React para mantener la consistencia en la aplicación.
 Mejorada la legibilidad del código y la estructura de los comentarios.
-Si estás satisfecho con la funcionalidad y estructura actual del componente, no es necesario realizar cambios significativos. ¿Deseas continuar con el siguiente componente o hay algo más en el actual que te gustaría abordar?
 */

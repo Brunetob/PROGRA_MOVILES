@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { StyleSheet, View, Pressable, Text } from 'react-native';
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 
@@ -69,12 +69,12 @@ const styles = StyleSheet.create({
   },
 });
 /*
- * Cambios realizados:
+ *Cambios realizados:
 
 Agregada documentación de propiedades y descripción del componente.
 Importado React para mantener la consistencia en la aplicación.
 Mejorada la legibilidad del código y la estructura de los comentarios.
 Se han agregado comentarios en el código para explicar ciertas secciones.
 
-En general, el componente está bien implementado, y las sugerencias realizadas son principalmente para mejorar la documentación y la claridad del código. Si estás satisfecho con la funcionalidad y estructura actual del componente, no es necesario realizar cambios significativos. 
+En general, el componente está bien implementado, y las sugerencias realizadas son principalmente para mejorar la documentación y la claridad del código. 
 */
