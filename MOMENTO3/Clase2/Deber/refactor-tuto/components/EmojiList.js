@@ -1,6 +1,15 @@
+import React from 'react';
 import { useState } from 'react';
 import { StyleSheet, FlatList, Image, Platform, Pressable } from 'react-native';
 
+/**
+ * Componente de lista de emojis.
+ * 
+ * @param {Object} props - Propiedades del componente.
+ * @param {Function} props.onSelect - Función de retorno de llamada al seleccionar un emoji.
+ * @param {Function} props.onCloseModal - Función de retorno de llamada al cerrar el modal.
+ * @returns {JSX.Element} Elemento de React que representa la lista de emojis.
+ */
 export default function EmojiList({ onSelect, onCloseModal }) {
   const [emoji] = useState([
     require('../assets/images/emoji1.jpeg'),
@@ -22,14 +31,16 @@ export default function EmojiList({ onSelect, onCloseModal }) {
           onPress={() => {
             onSelect(item);
             onCloseModal();
-          }}>
-          <Image source={item} key={index} style={styles.image} />
+          }}
+          key={index}>
+          <Image source={item} style={styles.image} />
         </Pressable>
       )}
     />
   );
 }
 
+// Estilos del componente
 const styles = StyleSheet.create({
   listContainer: {
     borderTopRightRadius: 10,
@@ -45,3 +56,12 @@ const styles = StyleSheet.create({
     marginRight: 20,
   },
 });
+
+/*
+ *  Cambios realizados:
+
+Agregada documentación de propiedades y descripción del componente.
+Importado React para mantener la consistencia en la aplicación.
+Mejorada la legibilidad del código y la estructura de los comentarios.
+En general, el componente está bien implementado y las sugerencias realizadas son principalmente para mejorar la documentación y la claridad del código. Si estás satisfecho con la funcionalidad y estructura actual del componente, no es necesario realizar cambios significativos. 
+ */
