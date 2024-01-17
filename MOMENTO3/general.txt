@@ -1,1 +1,2 @@
-me quedé en add gestures
+16/01/2023
+Se empezó con la parte de add gestures del tutorial de react
