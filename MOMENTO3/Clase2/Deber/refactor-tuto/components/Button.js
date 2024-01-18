@@ -1,48 +1,39 @@
-// import React from 'react';
+import React from 'react';
 import { StyleSheet, View, Pressable, Text } from 'react-native';
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 
-/**
- * Componente de botón personalizado.
- * 
- * @param {Object} props - Propiedades del componente.
- * @param {string} props.label - Texto del botón.
- * @param {string} props.theme - Tema del botón ("primary" o cualquier otro valor).
- * @param {Function} props.onPress - Función de retorno de llamada al presionar el botón.
- * @returns {JSX.Element} Elemento de React que representa el botón.
- */
 export default function Button({ label, theme, onPress }) {
-  // Renderiza el botón con tema primario o sin tema
-  if (theme === "primary") {
-    return (
-      <View style={[styles.buttonContainer, { borderWidth: 4, borderColor: "#ffd33d", borderRadius: 18 }]}>
-        <Pressable
-          style={[styles.button, { backgroundColor: '#fff' }]}
-          onPress={onPress}
-        >
-          <FontAwesome
-            name="picture-o"
-            size={18}
-            color="#25292e"
-            style={styles.buttonIcon}
-          />
-          <Text style={[styles.buttonLabel, { color: "#25292e" }]}>{label}</Text>
-        </Pressable>
-      </View>
-    );
-  }
+  const containerStyle = theme === "primary"
+    ? [styles.buttonContainer, { borderWidth: 4, borderColor: "#ffd33d", borderRadius: 18 }]
+    : styles.buttonContainer;
 
-  // Renderiza el botón sin tema
+  const buttonStyle = theme === "primary"
+    ? [styles.button, { backgroundColor: '#fff' }]
+    : styles.button;
+
+  const buttonLabelStyle = theme === "primary"
+    ? [styles.buttonLabel, { color: "#25292e" }]
+    : styles.buttonLabel;
+
+  const renderIcon = theme === "primary" && (
+    <FontAwesome
+      name="picture-o"
+      size={18}
+      color="#25292e"
+      style={styles.buttonIcon}
+    />
+  );
+
   return (
-    <View style={styles.buttonContainer}>
-      <Pressable style={styles.button} onPress={onPress}>
-        <Text style={styles.buttonLabel}>{label}</Text>
+    <View style={containerStyle}>
+      <Pressable style={buttonStyle} onPress={onPress}>
+        {renderIcon}
+        <Text style={buttonLabelStyle}>{label}</Text>
       </Pressable>
     </View>
   );
 }
 
-// Estilos del componente
 const styles = StyleSheet.create({
   buttonContainer: {
     width: 320,
@@ -68,13 +59,17 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
+
 /*
  *Cambios realizados:
 
-Agregada documentación de propiedades y descripción del componente.
-Importado React para mantener la consistencia en la aplicación.
-Mejorada la legibilidad del código y la estructura de los comentarios.
-Se han agregado comentarios en el código para explicar ciertas secciones.
+Reducción de duplicación de código: Antes, se tenía la misma lógica para los estilos y la creación de elementos JSX tanto en el bloque if como en el bloque else. Pero, al implementarle variables para almacenar los estilos comunes, se redujo la duplicación de código y se mejora la legibilidad de este.
 
-En general, el componente está bien implementado, y las sugerencias realizadas son principalmente para mejorar la documentación y la claridad del código. 
+Claridad en la lógica: Se separo la lógica de creación de estilos en variables con nombres descriptivos, con la intención de ser mas claro sobre el flujo en cada bloque. Las variables containerStyle, buttonStyle y buttonLabelStyle indican claramente el propósito de cada estilo y facilitan su comprensión.
+
+Mejor organización: Al agrupar estilos relacionados y lógica en variables, el código se organiza de manera más limpia y estructurada. Esto facilita la lectura y la identificación de patrones.
+
+Menos anidación: La refactorización elimina la necesidad de anidar ternarios, lo cual puede resultar confuso y propenso a errores. La lógica ahora es más plana y menos propensa a errores.
+
+Facilita futuras modificaciones: Si es necesario ajustar o agregar estilos al componente, es más fácil hacerlo en un solo lugar (dentro de las variables) en lugar de hacerlo en varios lugares del código.
 */

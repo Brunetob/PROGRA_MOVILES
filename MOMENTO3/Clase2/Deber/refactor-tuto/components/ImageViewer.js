@@ -15,3 +15,7 @@ const styles = StyleSheet.create({
         borderRadius: 18,
     },
 });
+/*
+ * Cambios
+El componente ImageViewer es bastante simple y cumple su función de mostrar una imagen. En este caso, no hubo complejidad o redundancia en el código original que justifique un refactor.
+*/

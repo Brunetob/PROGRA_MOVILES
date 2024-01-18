@@ -20,22 +20,24 @@ export default function EmojiList({ onSelect, onCloseModal }) {
     require('../assets/images/emoji6.jpeg'),
   ]);
 
+  const handleEmojiPress = (item) => {
+    onSelect(item);
+    onCloseModal();
+  };
+
+  const renderEmojiItem = ({ item, index }) => (
+    <Pressable onPress={() => handleEmojiPress(item)} key={index}>
+      <Image source={item} style={styles.image} />
+    </Pressable>
+  );
+
   return (
     <FlatList
       horizontal
       showsHorizontalScrollIndicator={Platform.OS === 'web'}
       data={emoji}
       contentContainerStyle={styles.listContainer}
-      renderItem={({ item, index }) => (
-        <Pressable
-          onPress={() => {
-            onSelect(item);
-            onCloseModal();
-          }}
-          key={index}>
-          <Image source={item} style={styles.image} />
-        </Pressable>
-      )}
+      renderItem={renderEmojiItem}
     />
   );
 }
@@ -58,9 +60,13 @@ const styles = StyleSheet.create({
 });
 
 /*
- *  Cambios realizados:
+Separación de lógica: Se extrajo la lógica de renderizado del emoji en la función renderEmojiItem, lo que hace que la función principal (EmojiList) sea más concisa y fácil de entender. Cada función ahora tiene una responsabilidad clara.
 
-Agregada documentación de propiedades y descripción del componente.
-Importado React para mantener la consistencia en la aplicación.
-Mejorada la legibilidad del código y la estructura de los comentarios.
+Manejo de eventos más claro: Se creó la función handleEmojiPress para manejar la lógica de selección de emoji y cierre del modal. Esto hace que la lógica de manejo de eventos sea más evidente y fácil de seguir.
+
+Legibilidad mejorada: La función principal (EmojiList) ahora es más concisa, ya que se ha reducido la cantidad de lógica en línea. Los nombres de las funciones y variables también se han ajustado para ser más descriptivos y facilitar la comprensión.
+
+Reducción de anidación: Se eliminó una capa de anidación al extraer la lógica en funciones separadas. Esto mejora la legibilidad y evita la anidación excesiva.
+
+Mejora de mantenibilidad: La refactorización facilita futuras modificaciones o extensiones del código. La lógica de manejo de eventos y renderizado ahora está encapsulada en funciones separadas, lo que hace que el componente sea más modular y fácil de mantener.
  */

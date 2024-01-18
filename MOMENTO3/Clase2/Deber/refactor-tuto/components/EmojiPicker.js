@@ -1,4 +1,3 @@
-import React from 'react';
 import { Modal, View, Text, Pressable, StyleSheet } from 'react-native';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
@@ -10,7 +9,7 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
  * @param {React.ReactNode} props.children - Contenido del selector de emojis.
  * @param {Function} props.onClose - Función de retorno de llamada al cerrar el selector de emojis.
  * @returns {JSX.Element} Elemento de React que representa el selector de emojis.
- */
+*/
 export default function EmojiPicker({ isVisible, children, onClose }) {
   return (
     <Modal animationType="slide" transparent={true} visible={isVisible}>
@@ -64,8 +63,7 @@ const styles = StyleSheet.create({
 
 /*
  * Cambios realizados:
+Claridad del código: El código original ya era bastante claro y seguía buenas prácticas de desarrollo. La estructura y la nomenclatura eran comprensibles, y no había redundancia ni complejidad innecesaria.
 
-Agregada documentación de propiedades y descripción del componente.
-Importado React para mantener la consistencia en la aplicación.
-Mejorada la legibilidad del código y la estructura de los comentarios.
+Funcionalidad simple: El componente EmojiPicker tiene una funcionalidad simple y directa: mostrar un modal con un título y un botón de cierre. No hay mucha lógica ni complicaciones en el código que requieran una reorganización significativa.
 */

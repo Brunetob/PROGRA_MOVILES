@@ -41,8 +41,10 @@ const styles = StyleSheet.create({
 
 /*
  * Cambios realizados:
+  
+  Entendiendo la funcionalidad del componente puedo decir que esta es de cierta manera, fácil de entender. Por lo que no se llevó a cabo mayor refactorización que añadir comentarios para mejor comprensión de propiedades y característicaas de etiquetas, entonces la refactorización completa no fue considerada necesaria debido a las siguientes razones:
 
-Agregada documentación de propiedades y descripción del componente.
-Importado React para mantener la consistencia en la aplicación.
-Mejorada la legibilidad del código y la estructura de los comentarios.
- */
+  Claridad del código: El código original ya era bastante claro. La estructura y la nomenclatura eran comprensibles, y no detecté reduncia ni el código de este componente ni en la aplicación en genral referente a este.
+
+  Funcionalidad simple: El componente CircleButton tiene una funcionalidad simple y directa: muestra un botón circular con un ícono.
+*/
