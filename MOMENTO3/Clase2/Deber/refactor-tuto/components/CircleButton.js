@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
 });
-
+x
 /*
  * Cambios realizados:
   
