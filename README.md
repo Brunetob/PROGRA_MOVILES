@@ -766,3 +766,7 @@ o el refactor al compartir ambos Buttons era más complicado y no hubiera sido t
 posibles actualizaciones y a la final si o si hubiera tenido que modularizar. Con esto dicho,
 siento que tomar todo esto en cuenta para futuros proyectos, este tipo de prácticas deberían ser
 aplicadas desde el principio por escalabilidad y mantenimiento.
+
+---------------------------------Trabajo en clase del día 19/01/2024 - trabajo franjas que cuando de click se muestre una alerta---------------------------------
+Captura:
+![image](https://github.com/Brunetob/PROGRA_MOVILES/assets/116246756/3b709633-8579-46b7-a312-c393075b9ca5)
