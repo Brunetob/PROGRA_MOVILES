@@ -1,0 +1,17 @@
+-------------------------------------------------Contenido-------------------------------------------------
+Responder a eventos
+El estado: la memoria un componente
+Renderizado y confirmaicón
+El estado como una inst
+
+---- Cuando una función tiene otra función dentro se llama "CLOSURE"
+---- Hay que tener cuidado con el multiparadigma: cuando en el mismo código en una parte trabajas con orientado a objetos y en otra parte orientado a funciones
+---- Los componentes pueden tener funciones
+
+---- Los manejadores de eventos deben ser pasados y no "llamados"
+{handleclick}>'evento'
+
+---- La metodologíade programación que usan las empresas 'top' se llama Extreme Programing
+
+Pregunta: Cuál es la diferencia enrte una función que se activa mediante props del componente vs un manejador de eventos
+Respuesta https://es.legacy.reactjs.org/docs/glossary.html#:~:text=La%20diferencia%20más%20importante%20entre,pero%20puede%20cambiar%20su%20estado%20.
