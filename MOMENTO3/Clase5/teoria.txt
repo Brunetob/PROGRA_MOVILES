@@ -1,0 +1,7 @@
+---- CLASE 5 ----
+* Actualizar el estado post-sustitución: las actualizaciones en cola 
+* <></>:El código <></> es equivalente a <React.Fragment></React.Fragment>, pero la versión abreviada es más concisa y se utiliza comúnmente para envolver varios elementos sin introducir un contenedor extra en el DOM.
+* Pregunta:
+En qué circunstancias sería útil o perjudicial utilizar la función de actualización setNumber(n => n + 1) para actualizar el estado varias veces en un evento?
+
+* SI se quiere estilizar en react native (expo) se puede usar TAMAGUI y así mismo se puede usar nativewind
