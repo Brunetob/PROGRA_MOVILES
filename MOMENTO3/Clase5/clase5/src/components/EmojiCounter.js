@@ -13,4 +13,4 @@ export default function EmojiCounter(){
             }}>Add 3 smiles</button>
         </>
     );
-};
+}

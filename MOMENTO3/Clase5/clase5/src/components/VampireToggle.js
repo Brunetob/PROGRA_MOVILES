@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+/*import React, {useState} from "react";
 
 function VampireToggle(){
     const [isVampire, setIsVampire] = useState(false);
@@ -9,4 +9,4 @@ function VampireToggle(){
             <button onClick={() => setIsVampire(!isVampire)}>Cambiar forma</button>
         </div>
     );
-};
+};*/

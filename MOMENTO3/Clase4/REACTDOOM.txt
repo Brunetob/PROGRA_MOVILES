@@ -5,3 +5,11 @@ las variables se comportan mas como instantánea que como variables normales de 
 * Cuando coloco llaves en el jsx <button{}> Dentro va el código Javascript y quiere decir que se ejecuta inmediatamente esoq uiere decir que se debe correr esa parte del código cuando se de click (ocurra el evento) y no antes
 ----Poner en cola ----
 batching: la práctica de agrupar múltiples actualizaciones de estado en un solo ciclo de renderizado en lugar de realizar renderizados independientes para cada actualización de estado.
+
+---- CLASE 5 ----
+* Actualizar el estado post-sustitución: las actualizaciones en cola 
+* <></>:El código <></> es equivalente a <React.Fragment></React.Fragment>, pero la versión abreviada es más concisa y se utiliza comúnmente para envolver varios elementos sin introducir un contenedor extra en el DOM.
+* Pregunta:
+En qué circunstancias sería útil o perjudicial utilizar la función de actualización setNumber(n => n + 1) para actualizar el estado varias veces en un evento?
+
+* SI se quiere estilizar en react native (expo) se puede usar TAMAGUI y así mismo se puede usar nativewind
