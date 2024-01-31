@@ -19,7 +19,7 @@ function CharacterStats() {
   // Mío
   function handleSave() {
     localStorage.setItem('character', JSON.stringify(character));
-    alert('Datos guardados en el localStorage')
+    alert('Datos guardados en el localStorqage')
   }
 
   return (
