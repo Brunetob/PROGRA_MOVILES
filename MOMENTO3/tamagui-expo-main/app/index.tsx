@@ -1,4 +1,4 @@
-import { Github, Twitter } from "@tamagui/lucide-icons";
+import { Backpack, Github, Twitter } from "@tamagui/lucide-icons";
 import { Link, useRouter } from "expo-router";
 import {
   Button,
@@ -12,86 +12,51 @@ import {
 
 import { MySafeAreaView } from "../components/MySafeAreaView";
 import { MyStack } from "../components/MyStack";
-import {styled} from "tamagui"
+// mios
+import { Image } from "tamagui";
 
 export default function Home() {
   const router = useRouter();
 
   return (
     <MySafeAreaView>
+      <YStack
+        alignItems="center"
+      >
+        <Image 
+          source={require('../assets/images/cinecam.png')}
+          style={{
+            marginTop: 100,
+            width: 160,
+            height: 160,
+            
+          }}
+        />
+      </YStack>
       <MyStack>
         <YStack
           space="$4"
           maxWidth={600}
         >
-          <H1 textAlign="center">THE HUNGER GAMES.</H1>
-          <Paragraph textAlign="center">
-            Here&apos;s a basic deploy screen about a movie
-          </Paragraph>
+          <H1 textAlign="center" color={"#fefefe"}>THE HUNGER GAMES</H1>
         </YStack>
 
-        <YStack space="$2.5">
-          <Button onPress={() => router.push("/users/testuser")}>
-            Go to user page
-          </Button>
-          <Button onPress={() => router.push("/tabs")}>Go to tabs page</Button>
-        </YStack>
-
-        <YStack space="$5">
-          <YGroup
-            bordered
-            separator={<Separator />}
-            theme="green"
+        <YStack 
+          space="$1"
+          style={{
+            alignItems: "center"
+          }}
+        >
+          <Button 
+            onPress={() => router.push("../app/dashboard/Film.tsx")}
+            width={100}
+            height={50}
           >
-            <YGroup.Item>
-              <Link
-                asChild
-                href="https://twitter.com/natebirdman"
-                target="_blank"
-              >
-                <ListItem
-                  hoverTheme
-                  title="Nate"
-                  pressTheme
-                  icon={Twitter}
-                />
-              </Link>
-            </YGroup.Item>
-            <YGroup.Item>
-              <Link
-                asChild
-                href="https://github.com/tamagui/tamagui"
-                target="_blank"
-              >
-                <ListItem
-                  hoverTheme
-                  pressTheme
-                  title="Tamagui"
-                  icon={Github}
-                />
-              </Link>
-            </YGroup.Item>
-            <YGroup.Item>
-              <Link
-                asChild
-                href="https://github.com/ivopr/tamagui-expo"
-                target="_blank"
-              >
-                <ListItem
-                  hoverTheme
-                  pressTheme
-                  title="This Template"
-                  icon={Github}
-                />
-              </Link>
-            </YGroup.Item>
-          </YGroup>
+            BEGIN
+          </Button>
         </YStack>
+        <YGroup separator={<Separator />}></YGroup>
       </MyStack>
     </MySafeAreaView>
   );
 }
-
-export const styles = styled({
-  backgroundColor: 
-});
