@@ -48,7 +48,7 @@ export default function Home() {
           }}
         >
           <Button 
-            onPress={() => router.push("../app/dashboard/Film.tsx")}
+            onPress={() => router.push("../app/dashboard")}
             width={100}
             height={50}
           >
