@@ -1,14 +1,22 @@
-import React from 'react'
-import { TamaguiProvider } from 'tamagui'
-import { tamagui } from './tamagui.config'
-import { AppLoading } from 'expo'
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+//import Button from './src/components/Button.tsx';
 
-const App = () => {
+export default function App() {
   return (
-    <TamaguiProvider theme={{ colors: { brand: '#6B46C1' } }} tamagui={tamagui}>
-      <MainNavigation />
-    </TamaguiProvider>
-  )
+    <View style={styles.container}>
+      <Text>Open up App.tsx to start working on your app!</Text>
+      <StatusBar style="auto" />
+      <Text>Hola</Text>
+    </View>
+  );
 }
 
-export default App
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
