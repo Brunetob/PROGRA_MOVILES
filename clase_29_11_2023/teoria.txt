@@ -1,7 +1,7 @@
 CLASE 29/11/2023
 Productividad: reutilización de componentes
 
-----Buscar en google 'chakra ui' (https://chakra-ui.com))
+----Buscar en google 'chakra ui' (https://chakra-ui.com)
 * is a simple, modular and accessible component library that gives you the building blocks you need to build your React applications.
 * Less code. More speed
 
