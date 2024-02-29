@@ -21,7 +21,7 @@ gráficos interactivos, utilizando JavaScript y React Native.
 
 
 * Por qué usar Android y IOS puro en vez de usar algo multiplataforma como ReactNative
- |- Rendimiento:
+ |- Rendimiento: 
 Nat iva: Las aplicaciones nativas suelen ofrecer un rendimiento óptimo, ya que están escritas específicamente para la plataforma y pueden aprovechar al máximo las características y optimizaciones de cada sistema operativo.
 React Native: Aunque React Native ha mejorado en términos de rendimiento, es posible que aún no alcance el mismo nivel que una aplicación nativa en algunos casos.
 
